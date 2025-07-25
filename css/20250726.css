@@ -31,3 +31,22 @@ a {
     text-decoration: none;
     color: var(--primary-color);
 }
+
+/* 헤더 + 네비게이션 */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 다른요소 위에 보이게하기 */
+    padding: var(--spacing-unit) 0;
+}
+
+.main-nav {
+    max-width: 1200px;
+    margin: 0 auto; /* 수평 중앙 정렬 */
+    padding: 0 calc(var(--spacing-unit) * 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
