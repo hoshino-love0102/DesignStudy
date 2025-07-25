@@ -97,11 +97,12 @@ main {
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: calc(var(--spacing-unit) * 2);
-    max-width: 600px; /* 문단이 너무 길어지지 않게 너비 제한 */
+    max-width: 600px; /* 문단이 너비 제한 */
 }
 
 .btn {
     display: inline-block;
+    border-radius: 50px; /* 모서리를 둥글게 만들어 알약 모양으로 */
     background-color: var(--primary-color);
     color: white;
     padding: var(--spacing-unit) calc(var(--spacing-unit) * 2.5);
