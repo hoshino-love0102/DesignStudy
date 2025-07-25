@@ -54,16 +54,16 @@ a {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--background-color); /* 나중에 배경 이미지가 들어올 것을 대비해 흰색으로 지정 */
+    color: var(--background-color); /* 배경고려해서 흰색지정 */
 }
 
 .main-nav ul {
-    list-style: none; /* li 태그의 기본 스타일(점) 제거 */
-    display: flex; /* 메뉴 아이템들도 flex로 가로 정렬 */
-    gap: calc(var(--spacing-unit) * 2); /* 메뉴 아이템 사이의 간격 */
+    list-style: none; /* 점 제거 */
+    display: flex; /* 가로 정렬 */
+    gap: calc(var(--spacing-unit) * 2);
 }
 
 .main-nav ul a {
-    color: var(--background-color); /* 로고와 마찬가지로 흰색으로 지정 */
+    color: var(--background-color); /* 로고처럼 흰색으로 지정 */
     font-weight: 400;
 }
