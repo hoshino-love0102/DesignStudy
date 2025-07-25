@@ -32,6 +32,11 @@ a {
     color: var(--primary-color);
 }
 
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 /* 헤더 및 네비게이션 */
 .main-header {
     position: fixed;
@@ -68,7 +73,7 @@ a {
     font-weight: 400;
 }
 
-/* 메인 컨텐츠 */
+/* 메인 컨텐츠 영역 */
 main {
     width: 100%;
 }
@@ -80,6 +85,25 @@ main {
     align-items: center;
     text-align: center;
     color: white;
-    /* 배경 이미지 위에 반투명 검은색 레이어를 씌워 글자가 잘 보이게 함 */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-unit);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    max-width: 600px; /* 문단이 너무 길어지지 않게 너비 제한 */
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-unit) calc(var(--spacing-unit) * 2.5);
+    font-weight: 700;
 }
