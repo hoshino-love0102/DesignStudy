@@ -54,16 +54,32 @@ a {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--background-color); /* 배경고려해서 흰색지정 */
+    color: var(--background-color);
 }
 
 .main-nav ul {
-    list-style: none; /* 점 제거 */
-    display: flex; /* 가로 정렬 */
+    list-style: none;
+    display: flex;
     gap: calc(var(--spacing-unit) * 2);
 }
 
 .main-nav ul a {
-    color: var(--background-color); /* 로고처럼 흰색으로 지정 */
+    color: var(--background-color);
     font-weight: 400;
+}
+
+/* 메인 컨텐츠 */
+main {
+    width: 100%;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* 배경 이미지 위에 반투명 검은색 레이어를 씌워 글자가 잘 보이게 함 */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
 }
