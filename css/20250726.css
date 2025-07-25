@@ -32,21 +32,38 @@ a {
     color: var(--primary-color);
 }
 
-/* 헤더 + 네비게이션 */
+/* 헤더 및 네비게이션 */
 .main-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* 다른요소 위에 보이게하기 */
+    z-index: 1000;
     padding: var(--spacing-unit) 0;
 }
 
 .main-nav {
     max-width: 1200px;
-    margin: 0 auto; /* 수평 중앙 정렬 */
+    margin: 0 auto;
     padding: 0 calc(var(--spacing-unit) * 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--background-color); /* 나중에 배경 이미지가 들어올 것을 대비해 흰색으로 지정 */
+}
+
+.main-nav ul {
+    list-style: none; /* li 태그의 기본 스타일(점) 제거 */
+    display: flex; /* 메뉴 아이템들도 flex로 가로 정렬 */
+    gap: calc(var(--spacing-unit) * 2); /* 메뉴 아이템 사이의 간격 */
+}
+
+.main-nav ul a {
+    color: var(--background-color); /* 로고와 마찬가지로 흰색으로 지정 */
+    font-weight: 400;
 }
