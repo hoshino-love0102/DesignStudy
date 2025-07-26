@@ -141,3 +141,12 @@ h2 {
     font-size: 1.5rem;
     margin-bottom: calc(var(--spacing-unit) * 1.5);
 }
+
+/* 푸터 */
+.main-footer {
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    text-align: center;
+    padding: calc(var(--spacing-unit) * 2) 0;
+    font-size: 0.9rem;
+}
