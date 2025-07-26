@@ -97,14 +97,33 @@ main {
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: calc(var(--spacing-unit) * 2);
-    max-width: 600px; /* 문단이 너비 제한 */
+    max-width: 600px;
 }
 
 .btn {
     display: inline-block;
-    border-radius: 50px; /* 모서리 둥글게 타원으로 */
     background-color: var(--primary-color);
     color: white;
     padding: var(--spacing-unit) calc(var(--spacing-unit) * 2.5);
+    border-radius: 50px;
     font-weight: 700;
+}
+
+/* 특징 섹션 */
+.features {
+    padding: calc(var(--spacing-unit) * 6) calc(var(--spacing-unit) * 2);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 { 
+    font-size: 2.2rem; 
+    text-align: center; 
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--spacing-unit) * 3);
 }
