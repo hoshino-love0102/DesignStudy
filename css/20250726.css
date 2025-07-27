@@ -150,3 +150,80 @@ h2 {
     padding: calc(var(--spacing-unit) * 2) 0;
     font-size: 0.9rem;
 }
+
+/* 반응형 */
+@media (max-width: 992px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: var(--spacing-unit);
+        margin-top: var(--spacing-unit);
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: calc(var(--spacing-unit) * 0.8) calc(var(--spacing-unit) * 2);
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav {
+        padding: 0 var(--spacing-unit);
+    }
+
+    .hero-content h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .main-footer {
+        font-size: 0.8rem;
+        padding: var(--spacing-unit) 0;
+    }
+}
