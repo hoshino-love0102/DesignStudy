@@ -12,7 +12,12 @@
     <header class="main-header">
         <nav class="main-nav">
             <a href="#" class="logo">MODERN</a>
-            <ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Contact</a></li>
@@ -23,7 +28,7 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>조금 겸손해지겠습니다</h1>
+                <h1>안녕하세요?</h1>
                 <p>백엔드 하는놈이 CSS써서 만드는 미니멀 디자인</p>
                 <a href="#" class="btn">궁금하면 클릭</a>
             </div>
@@ -51,6 +56,14 @@
     <footer class="main-footer">
         <p>&copy; 암소야 사랑해</p>
     </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
