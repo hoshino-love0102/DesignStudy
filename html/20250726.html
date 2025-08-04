@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모던 웹디자인</title>
+    <link rel="stylesheet" href="../css/20250726.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#" class="logo">MODERN</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>안녕하세요?</h1>
+                <p>백엔드 하는놈이 CSS써서 만드는 미니멀 디자인</p>
+                <a href="#" class="btn">궁금하면 클릭</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>주요 특징</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>개쩌는 퀄리티</h3>
+                    <p>부족하지만 터미널만큼 이쁜 퀄리티로 만드는중</p>
+                </div>
+                <div class="feature-item">
+                    <h3>능력을 최대한 활용함</h3>
+                    <p>프론트 모르겠어 flexbox가 뭔지도 모르겠고 반응형은 어케하는거야</p>
+                </div>
+                <div class="feature-item">
+                    <h3>디자인 어렵습니다</h3>
+                    <p>살려주세요 막상 해보려니까 너무 어려워요</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 암소야 사랑해</p>
+    </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
