@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>일정표</title>
+  <link rel="stylesheet" href="../css/20251022.css" />
+</head>
+<body>
+  <main class="dashboard">
+    <header class="header">
+      <h1>일정표</h1>
+      <p class="date" id="current-date"></p>
+    </header>
+
+    <section class="timer card">
+      <h2>집중 타이머</h2>
+      <div class="time" id="timer-display">0:59</div>
+      <div class="actions">
+        <button class="primary" id="start-btn">시작</button>
+        <button id="reset-btn">리셋</button>
+      </div>
+    </section>
+
+    <section class="todo card">
+      <h2>오늘의 목표</h2>
+      <ul class="todo-list" id="todo-list">
+        <li>
+          <input type="checkbox" />
+          <span>html 기본 구조 정리</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <span>css 레이아웃 연습</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <span>git 커밋 정리</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="../js/20251022.js"></script>
+</body>
+</html>

@@ -2,7 +2,6 @@
 node_modules/
 
 # TypeScript 컴파일 결과물
-*.js
 *.js.map
 *.d.ts
 dist/
