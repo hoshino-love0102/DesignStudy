@@ -10,13 +10,18 @@ let rest = 25 * 60;
 let id = null;
 let running = false;
 const startBtn = document.getElementById("start-btn");
+const resetBtn = document.getElementById("reset-btn");
+
+function stop() {
+  clearInterval(id);
+  id = null;
+  running = false;
+  startBtn.textContent = "시작";
+}
 
 startBtn.addEventListener("click", () => {
   if (running) {
-    clearInterval(id);
-    id = null;
-    running = false;
-    startBtn.textContent = "시작";
+    stop();
   } else {
     running = true;
     startBtn.textContent = "일시정지";
@@ -24,10 +29,16 @@ startBtn.addEventListener("click", () => {
       rest--;
       renderTime(rest);
       if (rest <= 0) {
-        clearInterval(id);
+        stop();
       }
     }, 1000);
   }
+});
+
+resetBtn.addEventListener("click", () => {
+  stop();
+  rest = 25 * 60;
+  renderTime(rest);
 });
 
 renderTime(rest);
