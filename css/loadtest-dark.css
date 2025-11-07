@@ -148,3 +148,28 @@ body{
   justify-content: center;
   gap: 14px;
 }
+
+.stats{ padding: 40px 0; }
+
+.stats-grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  margin-top: -12px;
+}
+
+.stat{
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.stat strong{
+  font-size: 28px;
+  display: block;
+}
+
+.stat span{ color: var(--muted); }
