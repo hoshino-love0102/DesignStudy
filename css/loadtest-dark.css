@@ -60,3 +60,22 @@ body{
   background: var(--btn-ghost-bg);
   color: var(--btn-ghost-text);
 }
+
+.nav{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--nav-border);
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+}
+
+.nav-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.nav-links a{ margin-left: 20px; opacity: .9; }
+.nav-links a:hover{ opacity: 1; }
